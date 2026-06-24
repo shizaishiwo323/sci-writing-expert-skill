@@ -1,0 +1,6 @@
+interface:
+  display_name: "SCI Writing Expert"
+  short_description: "Translate, polish, diagnose, and restructure scientific manuscripts."
+  default_prompt: "Use this skill to improve the supplied scientific manuscript text. Preserve scientific meaning, data, citations, equations, terminology, scope, and evidence strength; diagnose logic before polishing."
+policy:
+  allow_implicit_invocation: true
