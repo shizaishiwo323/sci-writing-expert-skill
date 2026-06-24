@@ -1,6 +1,6 @@
 ---
 name: sci-writing-expert
-description: Translate, polish, diagnose, and restructure SCI manuscripts into natural publication-ready English while preserving scientific meaning and evidence. Use for Chinese-to-English scientific translation, sentence or paragraph polishing, logic and cohesion repair, IMRaD section revision, abstract/title editing, and full-manuscript audits. Never invent results, citations, mechanisms, or unsupported claims.
+description: Translate, polish, diagnose, and restructure SCI manuscripts into natural publication-ready English while preserving scientific meaning and evidence. Use for Chinese-to-English scientific translation, sentence or paragraph polishing, logic and cohesion repair, IMRaD section revision, abstract/title editing, full-manuscript audits, and removal of AI-like invented compound labels. Preserve standard technical hyphenation and never invent results, citations, mechanisms, or unsupported claims.
 ---
 
 # SCI Writing Expert
@@ -21,6 +21,23 @@ scientific meaning and evidence
 ```
 
 Do not make a sentence more fluent by changing its scientific claim, uncertainty, scope, comparison, or logical role.
+
+## Non-negotiable Expression Rule
+
+Do not turn an ordinary source phrase into a newly coined hyphenated, en-dash, or em-dash label merely to make the revision sound more academic.
+
+This is not a ban on hyphens. Preserve or introduce a dash form only when at least one of the following is true:
+
+- the exact expression already appears in the source, glossary, or manuscript definition;
+- it is an established technical term in the relevant field;
+- it is a grammatically required compound modifier or is required by the target journal;
+- it is a numerical range or an established paired relation.
+
+Examples of normal terms that may be retained when accurate include `time-resolved`, `high-throughput`, `double-blind`, `first-order`, `pore-scale`, `field-scale`, `model-based`, and `data-driven`.
+
+Examples of wording that should normally be rewritten as ordinary syntax include `mechanism-aware interpretation`, `signal-structure bridge`, `connectivity-breakthrough nexus`, and newly invented multi-part labels.
+
+When standardness cannot be established from the supplied context, prefer ordinary syntax and use `author-confirm` only if the compact term itself affects scientific meaning. Load `references/dash_policy.md` for the full decision rule.
 
 ## First Move
 
@@ -48,7 +65,8 @@ Before editing, identify and preserve:
 - abbreviations, chemical names, taxonomic names, gene/protein names, and defined terms;
 - comparison direction, causal direction, negation, conditions, population, scale, and boundary cases;
 - uncertainty, modality, frequency, quantity, and evidence strength;
-- the distinction between the authors' findings and cited findings.
+- the distinction between the authors' findings and cited findings;
+- standard or manuscript-defined compound terms.
 
 Load `references/protected_content_and_evidence.md` whenever the passage contains quantitative claims, causal claims, citations, equations, or uncertain terminology.
 
@@ -89,7 +107,7 @@ Load `references/workflow_router.md`.
 Use progressive disclosure:
 
 - evidence and protected content: `references/protected_content_and_evidence.md`
-- target-journal adaptation: `references/target_article_adaptation.md`
+- target journal adaptation: `references/target_article_adaptation.md`
 - Chinese-to-English translation: `references/zh_en_translation.md`
 - sentence revision: `references/sentence_revision.md`
 - paragraph logic and cohesion: `references/cohesion_and_paragraphs.md`
@@ -139,9 +157,19 @@ word or phrase repair
 
 Move upward only when the lower-level operation cannot solve the problem.
 
-Natural scientific English is conventional, explicit, and restrained. It is not ornate English. Prefer a familiar precise verb over an inflated synonym, and an explicit logical relation over decorative transitions.
+Natural scientific English is conventional, explicit, and restrained. It is not ornate English. Prefer a familiar precise verb over an inflated synonym, an explicit logical relation over decorative transitions, and an ordinary phrase over a newly coined label.
 
-### 5. Verify
+### 5. Run the compound and dash gate
+
+Compare the source and revision before finalizing:
+
+1. Identify every hyphenated expression, en-dash expression, em-dash interruption, and LaTeX dash form that is new in the revision.
+2. Keep a new form only if it is established, manuscript-defined, grammatically required, a range or paired relation, or required by journal style.
+3. Treat suffixes such as `-aware`, `-informed`, `-driven`, `-based`, `-linked`, `-guided`, `-enabled`, and `-sensitive` as warning signals, not automatic errors. Standard expressions may remain; newly coined rhetorical labels should not.
+4. Rewrite unsupported compact labels as ordinary syntax.
+5. Do not remove a standard term merely because it contains a hyphen or dash.
+
+### 6. Verify
 
 Check that:
 
@@ -154,9 +182,11 @@ Check that:
 - each paragraph has a recognizable function;
 - each section follows a defensible information sequence;
 - the Abstract and Title agree with the paper;
-- no citation, mechanism, result, limitation, or implication was invented.
+- no citation, mechanism, result, limitation, or implication was invented;
+- no unsupported dash-based label was introduced;
+- established or defined compound terms were not damaged by overcorrection.
 
-### 6. Return the deliverable first
+### 7. Return the deliverable first
 
 Put revised or translated text before commentary unless the user requested diagnosis only. Use `references/output_contracts.md`. Keep explanations proportional to the task.
 
@@ -167,6 +197,7 @@ Put revised or translated text before commentary unless the user requested diagn
 - Give 2-4 options only when genuine alternatives exist.
 - Label differences in strength, formality, or meaning.
 - Do not generate synonyms that alter technical meaning.
+- Do not manufacture options that differ only by newly coined compound labels.
 
 ### `sentence-polish`
 
@@ -174,6 +205,7 @@ Put revised or translated text before commentary unless the user requested diagn
 - Repair grammar, idiom, modifier placement, information order, and unnecessary nominalization.
 - Keep citations and technical tokens fixed.
 - Prefer one publication-ready version.
+- Compare source and revision for newly introduced dash forms.
 - If context is essential, state the ambiguity and provide a conservative version.
 
 ### `zh-en-translation`
@@ -183,7 +215,8 @@ Put revised or translated text before commentary unless the user requested diagn
 - Remove empty stock framing, repeated subjects, and unsupported evaluative language.
 - Preserve logical relations and claim strength.
 - Use field-standard terminology when supported; otherwise mark `author-confirm`.
-- Load `references/zh_en_translation.md`.
+- Do not compress ordinary Chinese phrases into newly coined forms such as `X-aware`, `X-informed`, or multi-part dash labels.
+- Load `references/zh_en_translation.md` and `references/dash_policy.md`.
 
 ### `paragraph-revision`
 
@@ -191,6 +224,7 @@ Put revised or translated text before commentary unless the user requested diagn
 - Check topic sentence, evidence sequence, old-to-new flow, referents, connectors, and ending.
 - Reorder sentences only when this repairs a clear logic problem.
 - Do not invent evidence to fill a gap.
+- Apply the compound and dash gate after paragraph-level changes.
 - Return the revised paragraph and a compact change map.
 
 ### `section-revision`
@@ -217,7 +251,7 @@ context/problem -> aim/action -> methods
 -> key results/contribution -> bounded implication
 ```
 
-These are functional models, not mandatory sentence templates. Do not force every move into every paper.
+These are functional models, not mandatory sentence templates. Do not force every move into every paper. After structural revision, scan the complete section for repeated AI-like labels, unnecessary compound chains, and newly inserted em dashes.
 
 ### `manuscript-audit`
 
@@ -229,7 +263,8 @@ Before line editing, evaluate:
 - evidence chain from method to result to interpretation;
 - paragraph sequence and duplication;
 - missing, premature, or unsupported claims;
-- likely reviewer confusion or challenge points.
+- likely reviewer confusion or challenge points;
+- inconsistent terminology, including unnecessary variants created by compound labels.
 
 Load `references/manuscript_architecture_audit.md`. Return a prioritized plan before rewriting large sections.
 
@@ -241,6 +276,7 @@ Draft only from facts, findings, citations, terminology, and constraints supplie
 - Use placeholders such as `[sample size]` rather than inventing values.
 - Mark scientific choices that require confirmation.
 - Do not fabricate literature context, novelty, or mechanisms.
+- Do not invent a compact named framework, relation, index, signature, pipeline, or mechanism label.
 
 ## Section Boundaries
 
@@ -267,6 +303,9 @@ Never:
 - claim novelty merely because stronger English was requested;
 - erase negative, null, anomalous, or limiting results;
 - alter equations, variable names, signs, units, reference numbering, or figure/table labels;
+- create a new named framework, bridge, nexus, signature, pipeline, index, regime, or mechanism unless the source already defines it;
+- convert plain source wording into an unsupported hyphenated or dash-based label;
+- remove or dehyphenate a standard technical term merely to satisfy a superficial anti-AI rule;
 - copy distinctive wording from target articles or source materials.
 
 When scientific content appears inconsistent, preserve the original in the revision and flag the issue separately unless the user explicitly authorizes correction.
