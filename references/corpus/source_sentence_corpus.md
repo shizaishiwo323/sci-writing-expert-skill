@@ -12,6 +12,8 @@ This file stores sentence-level records from seven high-quality papers. Each rec
 
 Load this file only to look up records by function tag or paper ID. For routine editing, `corpus_rule_cards.md` is enough.
 
+P05 continues in `exemplar_niu_zhang_records.md` (chain records P05-C01 onward and sentence records from P05-S11), together with all records for P08, Niu and Zhang (2018).
+
 ## Corpus Overview
 
 | Paper ID | Paper short name | Journal | Field | Why selected |

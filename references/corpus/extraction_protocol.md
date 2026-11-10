@@ -25,6 +25,9 @@ When a sentence contains a scientific judgment that cannot be verified from the 
 | P05 | `JGR Solid Earth - 2020 - Niu - A Framework for Pore‐Scale Simulation of Effective Electrical Conductivity and Permittivity (1).pdf` |
 | P06 | `Water Resources Research - 2019 - Niu - Permeability Prediction in Rocks Experiencing Mineral Precipitation and Dissolution.pdf` |
 | P07 | `Water Resources Research - 2025 - Zhou - How Does Pore Structure Affect the NMR Relaxation in Unsaturated Porous Media  A.pdf` |
+| P08 | Niu and Zhang (2018), Joint inversion of NMR and SIP data to estimate pore size distribution of geomaterials, *Geophys. J. Int.* 212, 1791-1805, doi:10.1093/gji/ggx501 |
+
+P05 and P08 are the two exemplar papers (E2 and E1 in `exemplar_niu_zhang.md`). P01 to P07 have ten records each in `source_sentence_corpus.md`. The fuller exemplar pass for P08 and P05 (chains `Pxx-Cnn`, and P05 sentence records from S11) is in `exemplar_niu_zhang_records.md`.
 
 ## Extraction Target
 
@@ -50,6 +53,13 @@ The corpus can later be expanded to 12-15 records per paper after the rule cards
 | `RES` | Reports results | Put observation, direction, comparison, and numbers before interpretation |
 | `CON` | Compares cases, mechanisms, or prior work | Use contrast to clarify, not to exaggerate |
 | `IMP` | Interprets mechanism, implication, limitation, or future use | Keep interpretation tied to evidence and conditions |
+| `BKG` | Opens a paper or supplies background the reader needs | Start from use or control, and narrow one step per sentence |
+| `LNK` | Links sentences, paragraphs, or sections | Begin with the known, end with the new, and mark the relation plainly |
+| `MAP` | States a road map or the job of a section | Promise the order, then keep it |
+| `CLO` | Summarizes in an abstract or Conclusions | Replay the paper in its own order without new claims |
+| `STY` | Records surface forms to correct | Learn the function, not the slip |
+
+The last five tags were added for the exemplar pass. A record may carry two tags joined by `+`.
 
 ## Use Status
 
@@ -163,3 +173,45 @@ After each extraction pass, check:
 - every record can help decide whether to define a term, remove a fancy phrase, reduce overclaim, simplify syntax, or preserve evidence strength;
 - no rule encourages adding mechanisms, new interpretations, or broader claims;
 - high-risk positive examples are marked `caution` rather than treated as direct style templates.
+
+## Exemplar Pass
+
+The exemplar pass reads a whole paper that the skill author has chosen as a writing model, and records how its sentences follow one another as well as how single sentences are built. It was first applied to P08 and P05.
+
+Rules that differ from the first pass:
+
+- No fixed number of records. Cover every main section, and keep a record only if it scores 7 or above.
+- Use two record types. A chain record (`Pxx-Cnn`) covers a paragraph or a run of sentences. A sentence record (`Pxx-Snn`) covers one sentence or an adjacent pair.
+- Replace `Source sentence` with `Source pointer` (page, section, paragraph, sentence). Never store the sentence.
+- Add `Sentence link` to say how the sentence is tied to the one before or after it: which earlier words it picks up, and which connector it uses.
+- In a chain record, add `Sentence-by-sentence moves`: one numbered line per sentence saying what that sentence does. Quote only the connector or opening frame, in backticks.
+- If the skill author marked the passage in their copy, add `Reader mark` with a short description of the mark. Record marks about writing function only. Leave out the reader's private research notes.
+- Record non-native grammar and inflated wording as `caution`, give the corrected form in `Risk when misused`, and collect the forms in one `STY` record per paper.
+- Before committing, check the records against the extracted paper text for shared word sequences. Sequences of eight or more words should be limited to stock frames such as an objective or scope opener.
+
+Chain record template:
+
+```markdown
+## Pxx-Cnn
+
+**Source pointer:** p. N, section, paragraph, sentences a-b
+**Section:** ...
+**Function tag:** LNK + ...
+**Score:** 7-10/10
+**Use status:** positive / caution
+**Reader mark:** optional
+
+**Local context:** What the paragraph does in its section.
+**Sentence-by-sentence moves:**
+1. What sentence 1 does.
+2. What sentence 2 does.
+
+**Why it works:** ...
+**Sentence link:** How each sentence picks up the previous one.
+**Transferable rule:** ...
+**Reusable pattern:** `A multi-sentence pattern with placeholders.`
+**Risk when misused:** ...
+**Skill-ready instruction:** ...
+```
+
+Rule cards derived from exemplar records may address sentence order within a paragraph and the arrangement of paragraphs and sections. They keep the `Derived from` line and the ban on new facts, mechanisms, citations, and claims.

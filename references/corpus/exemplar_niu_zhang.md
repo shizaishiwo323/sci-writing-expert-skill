@@ -11,7 +11,7 @@ Copy the method of organization. Do not copy their scientific claims, their dist
 | E1 | Niu and Zhang (2018), Joint inversion of NMR and SIP data to estimate pore size distribution of geomaterials, *Geophys. J. Int.* 212, 1791-1805, doi:10.1093/gji/ggx501 | Introduction -> theory and its assumptions -> joint inversion method -> synthetic sample -> Berea sandstone and limitations -> conclusions |
 | E2 | Niu, Zhang, and Prasad (2020), A framework for pore-scale simulation of effective electrical conductivity and permittivity of porous media in the frequency range from 1 mHz to 1 GHz, *JGR: Solid Earth* 125, e2020JB020515 | Introduction -> theoretical background -> general framework -> application to Berea sandstone -> comparison with experiment -> conclusions |
 
-E2 is also record group P05 in `source_sentence_corpus.md`.
+E1 is record group P08 and E2 is record group P05. The record-level corpus for both papers is in `exemplar_niu_zhang_records.md`: 44 chain records that take a paragraph sentence by sentence, and 82 sentence records, each with a page pointer and a pattern. Read this file first for the overall model. Open the records file, through its index, when you need a worked model for one specific move. The first ten P05 records are in `source_sentence_corpus.md`.
 
 The author of this skill selected these papers because they are easy to read, use familiar words, avoid very long sentences, and arrange sentences, paragraphs, and sections in a clear order. In the Introduction, the first sentence opens with a general statement and each later sentence moves one step deeper.
 
@@ -87,6 +87,8 @@ what has already been done
 
 Give the reason for the difficulty. A statement that a topic has received little attention is weak on its own.
 
+Worked models: P05-C07 for the causal chain, P08-C03 for a gap built from assumptions and their failure conditions, and P08-C04 for the closest earlier study.
+
 ## Sentence patterns
 
 These patterns are common scientific forms. Replace every placeholder with the user's own content, and use a pattern only when the evidence supports it.
@@ -128,6 +130,8 @@ When explaining how a parameter is obtained, follow this order:
 3. compare it briefly with other methods when the choice needs a reason;
 4. give the steps for this study.
 
+Worked models: P05-C18 for the paragraph, and P05-S30 for the three ways to support a chosen value (typical, published, or consistent with another parameter).
+
 ### Results
 
 - Start with the comparison: `A comparison of X and Y shows that Z, especially for W.`
@@ -136,6 +140,8 @@ When explaining how a parameter is obtained, follow this order:
 - Keep the explanation cautious: `This discrepancy might be due to X.`
 - Explain a further analysis by its purpose: `To identify the contribution of X, we also conducted Y.`
 - Use a forward reference when the explanation appears later.
+- Describe a curve by walking along its axis in one direction, with the range at the start of each sentence (P05-C25).
+- After a tentative cause, add one sentence showing that the cause predicts the direction of the mismatch (P05-S36).
 
 ### Discussion and limitations
 
@@ -167,7 +173,7 @@ what was developed or done
 
 These papers are strong models of organization and clarity, but some local language should not be copied:
 
-- non-native grammar slips such as `Comparing to` where `Compared with` is correct, `resulted from` where `resulting from` is needed, or a singular verb with `a number of`;
+- non-native grammar slips such as `Comparing to` where `Compared with` is correct, `resulted from` where `resulting from` is needed, or a singular verb with `a number of` (full list with corrections in records P08-S44 and P05-S48);
 - occasional inflated or unnecessary words such as `profound feature` or `utilized`;
 - repeated `However` within one paragraph;
 - long comma-linked sentences in equation-heavy passages.

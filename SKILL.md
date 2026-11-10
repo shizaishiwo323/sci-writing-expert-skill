@@ -127,13 +127,14 @@ Use progressive disclosure:
 - plain word choice: `references/simple_word_replacement.md`
 - response format: `references/output_contracts.md`
 - easy-to-read writing model for sentence order, paragraph flow, and section logic: `references/corpus/exemplar_niu_zhang.md`
+- worked models from the two exemplar papers, by move (opening, gap, road map, parameter paragraph, comparison, limitation, Conclusions): `references/corpus/exemplar_niu_zhang_records.md`
 - corpus-derived sentence rules: `references/corpus/corpus_rule_cards.md`
 - pattern lookup by function tag or paper ID: `references/corpus/source_sentence_corpus.md`
 - revising the user's own manuscript: `references/corpus/negative_samples_from_own_manuscript.md`, then `references/corpus/own_manuscript_rule_cards.md`
 - adding papers to the corpus: `references/corpus/extraction_protocol.md`
 - original book, only when needed: `Science Research Writing_副本2.pdf` in the skill root
 
-Load the exemplar file for Introduction, Methods, Results, or Discussion work and whenever the user asks for prose that is natural, easy to read, or free of AI-like phrasing. Load the corpus rule cards for sentence and paragraph polishing. The negative samples are guardrails: follow their `Must not learn` notes, and do not reuse their sentences as models.
+Load the exemplar file for Introduction, Methods, Results, or Discussion work and whenever the user asks for prose that is natural, easy to read, or free of AI-like phrasing. Load the corpus rule cards for sentence and paragraph polishing. Open the exemplar records only when the task needs a model for one specific move; find it through the index at the top of that file and read just those records. The negative samples are guardrails: follow their `Must not learn` notes, and do not reuse their sentences as models.
 
 Consult the original book when the references do not settle a question about section structure, tense, voice, articles, modality, or functional language, or when the user asks what the book says. The PDF has 269 pages and no bookmarks, so search its text for the topic and read only the relevant pages. Restate what you find in your own words, and do not reproduce long passages or exercise answers in the output.
 
