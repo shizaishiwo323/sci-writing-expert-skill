@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 — 2026-11-10
+
+- Allowed the book PDF at the repository root in validation; other source documents remain forbidden.
+- Added guidance for consulting the book when the references do not settle a question.
+- Updated the notice, README, and source notes to state that the PDF is present.
+
 ## 0.2.0 — 2026-11-10
 
 - Merged the sentence corpus, rule cards, negative samples, and extraction protocol from `academic-sentence-polisher`.

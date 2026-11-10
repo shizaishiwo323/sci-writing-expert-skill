@@ -40,7 +40,7 @@ Paper IDs and source titles are listed in `references/corpus/extraction_protocol
 
 ## Copyright policy
 
-Do not add the source PDF, extracted book text, screenshots, exercises, answer keys, or extended examples to this repository.
+The book PDF at the repository root (`Science Research Writing_副本2.pdf`) is the one allowed source document. It may be consulted when the references do not settle a question. Do not add other source PDFs, extracted book text, screenshots, exercises, answer keys, or extended examples to this repository.
 
 When expanding the Skill:
 
@@ -48,4 +48,4 @@ When expanding the Skill:
 2. rewrite it independently;
 3. add an operational decision rule or original example;
 4. cite the bibliographic source here when appropriate;
-5. verify that no copyrighted source file is committed.
+5. verify that no copyrighted source file other than the book PDF is committed.

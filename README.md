@@ -134,6 +134,6 @@ bash scripts/publish_to_github.sh shizaishiwo323 sci-writing-expert-skill public
 
 ## 来源与版权
 
-该 Skill 受到 Hilary Glasman-Deal 的 *Science Research Writing for Non-Native Speakers of English* 的教学框架启发，但仓库内容为独立归纳、重新组织和改写，不包含原书 PDF、章节转录、练习答案或大段原文。
+该 Skill 受到 Hilary Glasman-Deal 的 *Science Research Writing for Non-Native Speakers of English* 的教学框架启发，Skill 的规则内容为独立归纳、重新组织和改写，不包含章节转录、练习答案或大段原文。仓库根目录保留了一份原书 PDF（`Science Research Writing_副本2.pdf`），供必要时查阅原文；它不属于本仓库 MIT 许可的范围。
 
 详见 `NOTICE.md` 与 `references/source_notes.md`。

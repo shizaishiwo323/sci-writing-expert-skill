@@ -131,8 +131,11 @@ Use progressive disclosure:
 - pattern lookup by function tag or paper ID: `references/corpus/source_sentence_corpus.md`
 - revising the user's own manuscript: `references/corpus/negative_samples_from_own_manuscript.md`, then `references/corpus/own_manuscript_rule_cards.md`
 - adding papers to the corpus: `references/corpus/extraction_protocol.md`
+- original book, only when needed: `Science Research Writing_副本2.pdf` in the skill root
 
 Load the exemplar file for Introduction, Methods, Results, or Discussion work and whenever the user asks for prose that is natural, easy to read, or free of AI-like phrasing. Load the corpus rule cards for sentence and paragraph polishing. The negative samples are guardrails: follow their `Must not learn` notes, and do not reuse their sentences as models.
+
+Consult the original book when the references do not settle a question about section structure, tense, voice, articles, modality, or functional language, or when the user asks what the book says. The PDF has 269 pages and no bookmarks, so search its text for the topic and read only the relevant pages. Restate what you find in your own words, and do not reproduce long passages or exercise answers in the output.
 
 ### 3. Diagnose before rewriting
 
