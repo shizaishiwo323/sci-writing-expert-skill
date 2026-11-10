@@ -14,7 +14,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "SKILL.md"
 
+BOOK_PDF = "Science Research Writing_副本2.pdf"
+
 REQUIRED = [
+    ROOT / BOOK_PDF,
     SKILL,
     ROOT / "README.md",
     ROOT / "NOTICE.md",
@@ -25,6 +28,8 @@ REQUIRED = [
 ]
 
 FORBIDDEN_SUFFIXES = {".pdf", ".epub", ".mobi", ".azw", ".azw3"}
+# The book kept at the repository root is the only source document allowed.
+ALLOWED_SOURCE_DOCS = {BOOK_PDF}
 PATH_PATTERN = re.compile(
     r"`((?:references|scripts|agents|tests)/[^`\n]+)`"
 )
@@ -99,7 +104,7 @@ def main() -> int:
         if ".git" in rel.parts:
             continue
 
-        if path.suffix.lower() in FORBIDDEN_SUFFIXES:
+        if path.suffix.lower() in FORBIDDEN_SUFFIXES and rel.as_posix() not in ALLOWED_SOURCE_DOCS:
             errors.append(f"forbidden source format committed: {rel}")
 
         if path.suffix.lower() in {".md", ".yaml", ".yml", ".py", ".txt", ".sh"}:
