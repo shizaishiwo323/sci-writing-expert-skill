@@ -25,7 +25,7 @@ This Skill independently restates and operationalizes general concepts including
 - Niu, Q., and Zhang, C. (2018), *Geophysical Journal International*, 212, 1791-1805, doi:10.1093/gji/ggx501.
 - Niu, Q., Zhang, C., and Prasad, M. (2020), *Journal of Geophysical Research: Solid Earth*, 125, e2020JB020515.
 
-Paper IDs and source titles are listed in `references/corpus/extraction_protocol.md`. The corpus stores functional patterns, reasons, and source pointers. It does not store paper text.
+Paper IDs and source titles are listed in `references/corpus/extraction_protocol.md`. The corpus stores functional patterns, reasons, and source pointers. It does not store paper text. Records for the two exemplar papers add a sentence-by-sentence description of what each sentence does, with page pointers and short connector frames only.
 
 ## Original additions
 
