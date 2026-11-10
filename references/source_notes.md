@@ -18,6 +18,15 @@ This Skill independently restates and operationalizes general concepts including
 - articles, modifiers, sequence, frequency, quantity, causality, and modality;
 - use of representative target articles to adapt generic conventions.
 
+## Sentence corpus and exemplar papers
+
+`references/corpus/` holds records and rules distilled from seven research papers, from the author's revision history, and from two exemplar papers:
+
+- Niu, Q., and Zhang, C. (2018), *Geophysical Journal International*, 212, 1791-1805, doi:10.1093/gji/ggx501.
+- Niu, Q., Zhang, C., and Prasad, M. (2020), *Journal of Geophysical Research: Solid Earth*, 125, e2020JB020515.
+
+Paper IDs and source titles are listed in `references/corpus/extraction_protocol.md`. The corpus stores functional patterns, reasons, and source pointers. It does not store paper text.
+
 ## Original additions
 
 - Codex-specific routing and progressive reference loading;

@@ -8,6 +8,7 @@
 - Introduction、Methods、Results、Discussion/Conclusion、Abstract 和 Title 的功能结构诊断；
 - 全文故事线、章节排布、证据链和前后呼应审查；
 - 目标期刊与代表性论文语料适配；
+- 内置句子语料、规则卡、自有稿件反面样本，以及 Niu & Zhang 两篇范文总结的易读写作模型；
 - 在不改变数据、引用、公式、术语和证据强度的前提下修改。
 
 ## 设计原则
