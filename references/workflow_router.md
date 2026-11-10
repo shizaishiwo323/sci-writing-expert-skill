@@ -85,6 +85,7 @@ Load:
 - `manuscript_architecture_audit.md`
 - relevant section references
 - `target_article_adaptation.md` if journal/corpus material is available
+- `corpus/exemplar_niu_zhang.md` to compare section order, paragraph jobs, and transitions with the writing model
 
 Return priorities before large-scale rewriting.
 

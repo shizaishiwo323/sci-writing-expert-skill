@@ -1,6 +1,6 @@
 # Target-Article Adaptation
 
-Generic scientific-writing rules are defaults. A representative target corpus reveals field and journal conventions.
+Generic scientific-writing rules are defaults. A representative target corpus reveals field and journal conventions. If the user supplies no target articles, use `corpus/exemplar_niu_zhang.md` as the default model for readability and organization.
 
 ## 1. Preferred corpus
 

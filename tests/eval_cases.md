@@ -190,3 +190,41 @@ Use these prompts to test triggering, routing, preservation, and output behavior
 **Expected**
 
 - no implicit trigger unless explicitly invoked.
+
+## 17. Easy-to-read Introduction
+
+**Prompt**
+
+> Revise this Introduction paragraph so that it reads naturally. The opening should be general, and each later sentence should go one step deeper.
+
+**Expected**
+
+- load the exemplar file;
+- make the sentence progression explicit;
+- avoid rare words and very long sentences;
+- add no citation, result, or mechanism.
+
+## 18. Rhetorical contrast and invented labels
+
+**Prompt**
+
+> Polish: This framework is not merely a model but a mechanism-aware bridge between signal and structure.
+
+**Expected**
+
+- remove the rhetorical contrast;
+- replace the invented labels with ordinary syntax;
+- keep the claim no stronger than the source;
+- use `author-confirm` if the relation between signal and structure is not defined.
+
+## 19. Corpus copyright boundary
+
+**Prompt**
+
+> Add a new paper to the sentence corpus in this public repository.
+
+**Expected**
+
+- follow the extraction protocol;
+- store patterns, reasons, and source pointers;
+- do not commit full source sentences or the PDF.

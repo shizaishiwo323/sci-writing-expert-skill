@@ -1,6 +1,6 @@
 ---
 name: sci-writing-expert
-description: Translate, polish, diagnose, and restructure SCI manuscripts into natural publication-ready English while preserving scientific meaning and evidence. Use for Chinese-to-English scientific translation, sentence or paragraph polishing, logic and cohesion repair, IMRaD section revision, abstract/title editing, full-manuscript audits, and removal of AI-like invented compound labels. Preserve standard technical hyphenation and never invent results, citations, mechanisms, or unsupported claims.
+description: Translate, polish, diagnose, and restructure SCI manuscripts into natural publication-ready English while preserving scientific meaning and evidence. Use for Chinese-to-English scientific translation, sentence or paragraph polishing, logic and cohesion repair, IMRaD section revision, abstract/title editing, full-manuscript audits, easy-to-read style based on an exemplar corpus, and removal of AI-like invented compound labels. Preserve standard technical hyphenation and never invent results, citations, mechanisms, or unsupported claims.
 ---
 
 # SCI Writing Expert
@@ -126,6 +126,13 @@ Use progressive disclosure:
 - overclaiming: `references/overclaim_downgrade.md`
 - plain word choice: `references/simple_word_replacement.md`
 - response format: `references/output_contracts.md`
+- easy-to-read writing model for sentence order, paragraph flow, and section logic: `references/corpus/exemplar_niu_zhang.md`
+- corpus-derived sentence rules: `references/corpus/corpus_rule_cards.md`
+- pattern lookup by function tag or paper ID: `references/corpus/source_sentence_corpus.md`
+- revising the user's own manuscript: `references/corpus/negative_samples_from_own_manuscript.md`, then `references/corpus/own_manuscript_rule_cards.md`
+- adding papers to the corpus: `references/corpus/extraction_protocol.md`
+
+Load the exemplar file for Introduction, Methods, Results, or Discussion work and whenever the user asks for prose that is natural, easy to read, or free of AI-like phrasing. Load the corpus rule cards for sentence and paragraph polishing. The negative samples are guardrails: follow their `Must not learn` notes, and do not reuse their sentences as models.
 
 ### 3. Diagnose before rewriting
 
@@ -158,6 +165,8 @@ word or phrase repair
 Move upward only when the lower-level operation cannot solve the problem.
 
 Natural scientific English is conventional, explicit, and restrained. It is not ornate English. Prefer a familiar precise verb over an inflated synonym, an explicit logical relation over decorative transitions, and an ordinary phrase over a newly coined label.
+
+Write so that a researcher in the field can follow the text in one reading. Use words that are common in general scientific writing or standard in the field. Let each sentence develop from the previous one. Give each paragraph one job. Split a sentence that carries two claims when the split keeps all conditions. As a working range, aim for most Introduction sentences to be about 20-25 words and treat sentences over about 40 words as candidates for splitting. Equations, required conditions, and journal style can justify exceptions.
 
 ### 5. Run the compound and dash gate
 
@@ -206,6 +215,7 @@ Put revised or translated text before commentary unless the user requested diagn
 - Keep citations and technical tokens fixed.
 - Prefer one publication-ready version.
 - Compare source and revision for newly introduced dash forms.
+- Apply the corpus rule cards when one matches the sentence's function.
 - If context is essential, state the ambiguity and provide a conservative version.
 
 ### `zh-en-translation`
@@ -223,6 +233,7 @@ Put revised or translated text before commentary unless the user requested diagn
 - State the paragraph's intended function.
 - Check topic sentence, evidence sequence, old-to-new flow, referents, connectors, and ending.
 - Reorder sentences only when this repairs a clear logic problem.
+- Use the sentence progression in `references/corpus/exemplar_niu_zhang.md` to check how each sentence follows from the previous one.
 - Do not invent evidence to fill a gap.
 - Apply the compound and dash gate after paragraph-level changes.
 - Return the revised paragraph and a compact change map.
